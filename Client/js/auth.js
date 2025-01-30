@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:5500/api/auth";
+const API_BASE_URL = "https://task-manager-dfbv.onrender.com/api/auth";
 
 // Handle Registration
 document

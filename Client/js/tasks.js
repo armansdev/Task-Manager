@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:5500/api/tasks";
+const API_BASE_URL = "https://task-manager-dfbv.onrender.com/api/tasks";
 const token = localStorage.getItem("token");
 
 if (!token) {
