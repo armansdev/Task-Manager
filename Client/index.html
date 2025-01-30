@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Task Manager</h2>
+        <button id="logout">Logout</button>
+        <div>
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        <div id="tasks-list"></div>
+    </div>
+
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Add New Task</h3>
+            <form id="task-form">
+                <label for="task-title">Title</label><br>
+                <input type="text" id="task-title" placeholder="Title" required><br>
+                <label for="task-desc">Description</label><br>
+                <textarea id="task-desc" placeholder="Description" required></textarea><br>
+                <label for="task-priority">Task Priority</label><br>
+                <select id="task-priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select><br>
+                <label for="task-dueDate">Due Date</label><br>
+                <input type="date" id="task-dueDate" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/tasks.js"></script>
+</body>
+
+</html>
